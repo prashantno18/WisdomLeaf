@@ -1,0 +1,22 @@
+package com.wisdom.leaf.rest.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.wisdom.leaf.rest.IClockConvertor;
+import com.wisdom.leaf.service.IClockConvertorService;
+
+@Primary
+@RestController
+public class ClockConvertor implements IClockConvertor {
+	
+	@Autowired
+	private IClockConvertorService ICS;
+
+	@Override
+	public String clockConvertor() {
+		return ICS.checking();
+	}
+
+}
