@@ -19,7 +19,7 @@ public class ClockConvertor implements IClockConvertor {
 	public String clockConvertor(String time) {
 		
 		if (time.isEmpty()) {
-			return TimeConstants.PLEASE_ENTER_VAILD_TIME;
+			return TimeConstants.PLEASE_ENTER_VALID_TIME;
 		}
 		return ICS.clockConvertor(time);
 	}

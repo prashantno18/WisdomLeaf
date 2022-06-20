@@ -55,7 +55,7 @@ public class ClockConvertorServiceImpl implements IClockConvertorService {
 	private String midnight(int minute, int nextHour, String[] numberWords) {
 		if (minute == 00) {
 
-			return TimeConstants.MIDNIGHT;
+			return TimeConstants.ITS +TimeConstants.MIDNIGHT;
 		} else {
 			return TimeConstants.ITS + numberWords[nextHour + 12] + " " + numberWords[minute];
 		}
@@ -64,7 +64,7 @@ public class ClockConvertorServiceImpl implements IClockConvertorService {
 	private String midday(int minute, int nextHour, String[] numberWords) {
 		if (minute == 00) {
 
-			return TimeConstants.MIDDAY;
+			return TimeConstants.ITS +TimeConstants.MIDDAY;
 		} else {
 
 			return TimeConstants.ITS + numberWords[12] + " " + numberWords[minute];
