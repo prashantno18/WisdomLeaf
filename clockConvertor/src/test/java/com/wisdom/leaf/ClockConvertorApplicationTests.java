@@ -14,7 +14,8 @@ class ClockConvertorApplicationTests   {
 	@Test
 	void contextLoads() {
 	
-		System.out.println(ICS.checking());
+		String clockConvertor = ICS.clockConvertor("10.11");
+		System.out.println(clockConvertor);
 	}
 
 }

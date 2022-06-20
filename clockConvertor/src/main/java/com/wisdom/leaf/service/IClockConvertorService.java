@@ -2,6 +2,6 @@ package com.wisdom.leaf.service;
 
 public interface IClockConvertorService {
 	
-	public String checking();
+	public String clockConvertor(String time);
 
 }
